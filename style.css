@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    justify-content: center;
+    background-color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+max-width: 600px;
+margin: 0 auto;
+z-index: 1;
+}
+
+h2{
+   text-align: center;
+   font-size: 21px;
+}
+.container .faq{
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow-y: hidden;
+    transition: all .5s;
+    cursor: pointer;
+    height: 53px;
+}
+/* .faq::before{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f075';
+    position: absolute;
+    color: #2ecc71;
+} */
+.container .faq header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+header p{
+    margin-right: 3rem;
+}
+header .fa-angle-down{
+ color: white;
+ border-radius:50%;
+ position: absolute;
+ right: 0;
+height: 30px;
+width: 30px;
+ align-items: center;
+ font-size: 20px;
+ font-weight: 700;
+ display: flex;
+ justify-content: center;
+   background-color: gray;
+}
+
+header .fa-times{
+    color: white;
+ border-radius:50%;
+ position: absolute;
+ right: 0;
+height: 30px;
+width: 30px;
+ align-items: center;
+ font-size: 16px;
+
+ display: flex;
+ justify-content: center;
+   background-color: gray; 
+}
+.faq.active{
+    height:100px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
+
+}
+
+.act{
+    height:53px ;
+}
